@@ -2,7 +2,7 @@ package com.challenges;
 
 public class MyHashMap<K, V> {
 
-    Object[] array;
+    private Object[] array;
 
     MyHashMap() {
         array = new Object[1000];
