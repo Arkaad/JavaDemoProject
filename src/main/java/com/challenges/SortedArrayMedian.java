@@ -18,7 +18,7 @@ public class SortedArrayMedian {
             int j = halfLen - i;
             if (i < iMax && B[j - 1] > A[i]) {
                 iMin = i + 1; // i is too small
-            } else if (i > iMin && A[i - 1] > B[j]) {
+            } else if (i > iMin && A[i - 1] > B[j]) {//TODO
                 iMax = i - 1; // i is too big
             } else { // i is perfect
                 int maxLeft = 0;
@@ -49,6 +49,6 @@ public class SortedArrayMedian {
     }
 
     public static void main(String[] args) {
-        System.out.println(findMedianSortedArrays(new int[]{1, 3}, new int[]{2, 4}));
+        System.out.println(findMedianSortedArrays(new int[]{4}, new int[]{1,2,5,6}));
     }
 }
