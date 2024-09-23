@@ -8,6 +8,8 @@ public class NumberToWord {
         long limit = 1000000000000L, curr_hun, t = 0;
         if (n == 0)
             return ("Zero");
+        else if (n < 0)
+            return ("Invalid");
         String[] multiplier = {"", "Trillion", "Billion", "Million", "Thousand"};
         String[] firstTwenty = {
                 "", "One", "Two", "Three",
